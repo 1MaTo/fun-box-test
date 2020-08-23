@@ -1,38 +1,132 @@
-.App {
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: url("./images/pattern.png");
+  overflow: auto;
+}
+
+.background-shadow {
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  display: flex;
+}
+
+.page-content {
+  margin: auto;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Exo";
+  font-size: 36px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 320px;
+  margin: 0px 24px 24px 24px;
+}
+
+.card {
+  width: 320px;
+  height: 480px;
+  font-family: "trebuchet ms";
+  position: relative;
+  background: url("./images//background/default.png");
+  margin-bottom: 16px;
+}
+
+.card:hover {
+  background-image: url("./images/background/defaultHover.png");
+}
+
+.card.selected {
+  background-image: url("./images/background/selected.png");
+}
+
+.card.selected.on-selected-hover:hover {
+  background-image: url("./images/background/selectedHover.png");
+}
+
+.card.disabled {
+  background-image: url("./images/background/disabled.png");
+}
+
+.main-text {
+  padding: 26px 0px 0px 50px;
+}
+
+.phrase {
+  color: #666666;
+  font-size: 16px;
+}
+
+.selected.on-selected-hover .phrase {
+  color: #e62e7a;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 49px;
+}
+
+.ingredient {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.description {
+  color: #666666;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.weight {
+  width: 80px;
+  height: 58px;
+  position: absolute;
+  text-align: center;
+  right: 15px;
+  line-height: 18px;
+  bottom: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weight .number {
+  font-size: 42px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weight .word {
+  font-size: 21px;
+}
+
+.disabled .main-text > * {
+  color: #b3b3b3;
+  opacity: 50%;
+}
+
+.footer-text {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+
+.disabled-footer-text {
+  color: #ffff66;
+}
+
+.buy-text {
+  color: #1698d9;
+  border-bottom: 1px dashed;
+  cursor: pointer;
 }
