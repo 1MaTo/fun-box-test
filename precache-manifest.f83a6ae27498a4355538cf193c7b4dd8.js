@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e4d93a3773d7eedfc8adcfce315ff37",
+    "revision": "6c7e86224c9d2ffa00c742c6c0dd7748",
     "url": "/fun-box-test/index.html"
   },
   {
-    "revision": "49b69a49a52cdf0edec5",
-    "url": "/fun-box-test/static/css/main.b0c147a4.chunk.css"
+    "revision": "6907eeef748d0c0e90ce",
+    "url": "/fun-box-test/static/css/main.9cbc8881.chunk.css"
   },
   {
-    "revision": "b03071100560b669fb83",
-    "url": "/fun-box-test/static/js/2.a62739b2.chunk.js"
+    "revision": "becc2f41bd9398cf61cb",
+    "url": "/fun-box-test/static/js/2.96616f4e.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/fun-box-test/static/js/2.a62739b2.chunk.js.LICENSE.txt"
+    "url": "/fun-box-test/static/js/2.96616f4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "49b69a49a52cdf0edec5",
-    "url": "/fun-box-test/static/js/main.86cb4eda.chunk.js"
+    "revision": "6907eeef748d0c0e90ce",
+    "url": "/fun-box-test/static/js/main.32ac9a6c.chunk.js"
   },
   {
     "revision": "7558896ecf39290825f7",
