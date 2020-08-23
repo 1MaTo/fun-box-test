@@ -1,7 +1,13 @@
 @font-face {
   font-family: 'Exo';
   src: local('Exo'), url('./font/Exo2.0-Thin.otf') format('opentype');
-
+}
+/* to preload images and prevent blinking*/
+body::after {
+  display: none;
+  content: url("./images//background/default.png") url("./images/background/defaultHover.png")
+    url("./images/background/selected.png") url("./images/background/selectedHover.png")
+    url("./images/background/disabled.png");
 }
 
 body {

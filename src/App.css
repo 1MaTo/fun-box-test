@@ -46,19 +46,19 @@
 }
 
 .card:hover {
-  background-image: url("./images/background/defaultHover.png");
+  background: url("./images/background/defaultHover.png");
 }
 
 .card.selected {
-  background-image: url("./images/background/selected.png");
+  background: url("./images/background/selected.png");
 }
 
 .card.selected.on-selected-hover:hover {
-  background-image: url("./images/background/selectedHover.png");
+  background: url("./images/background/selectedHover.png");
 }
 
 .card.disabled {
-  background-image: url("./images/background/disabled.png");
+  background: url("./images/background/disabled.png");
 }
 
 .main-text {
