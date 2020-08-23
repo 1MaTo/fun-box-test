@@ -112,7 +112,7 @@
 
 .disabled .main-text > * {
   color: #b3b3b3;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .footer-text {

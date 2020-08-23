@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
 
+
+  useEffect( () => {
+    
+    setLoading(false)
+  },[])
+
+  const [isLoading, setLoading] = useState(true)
+
   const [phrases] = useState({
+
     unhover: 'Сказочное заморское яство',
     hover: 'Котэ не одобряет?',
   })
@@ -114,6 +123,7 @@ function App() {
   return (
     <div className="background">
       <div className="background-shadow">
+        {!isLoading &&
         <div className="page-content">
           <div className="page-title">
             Ты сегодня покормил кота?
@@ -161,7 +171,7 @@ function App() {
               )
             })}
           </div>
-        </div>
+        </div>}
       </div>
     </div>
   );
