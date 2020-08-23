@@ -130,3 +130,36 @@
   border-bottom: 1px dashed;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .page-title {
+    margin-top: 30px;
+  }
+  .page-content {
+    min-width: 340px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .page-title {
+    margin-top: 30px;
+  }
+  .page-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-content {
+    width: 740px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-content {
+    width: 100vw;
+  }
+}
