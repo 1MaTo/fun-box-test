@@ -3,20 +3,6 @@ import './App.css';
 
 function App() {
 
-
-  useEffect( () => {
-    
-    setLoading(false)
-  },[])
-
-  const [isLoading, setLoading] = useState(true)
-
-  const [phrases] = useState({
-
-    unhover: 'Сказочное заморское яство',
-    hover: 'Котэ не одобряет?',
-  })
-
   const [items, setItems] = useState([
     {
       id: 'e1qw3',
@@ -54,6 +40,11 @@ function App() {
   ])
 
   const [selected, setSelected] = useState([])
+  const [justHovered, setJustHovered] = useState(false) 
+  const [phrases] = useState({
+    unhover: 'Сказочное заморское яство',
+    hover: 'Котэ не одобряет?',
+  })
 
   const numbersToBold = (str) => {
     return (str.split(' ')
@@ -70,6 +61,7 @@ function App() {
     if (index === -1) {
       setSelected([item_id, ...selected])
       element.classList.add('selected')
+      setJustHovered(true)
     } else {
       selected_items.splice(selected_items.indexOf(item_id), 1)
       setSelected(selected_items)
@@ -80,7 +72,7 @@ function App() {
 
   const handleHover = (target, id) => {
     const currItems = items.map(item => {
-      if (item.id === id && target.classList.contains('selected')) {
+      if (item.id === id && target.classList.contains('selected') && !justHovered) {
         item.phrase = phrases.hover
         target.classList.add('on-selected-hover')
       }
@@ -97,6 +89,7 @@ function App() {
       }
       return item
     })
+    setJustHovered(false)
     setItems(currItems)
   }
 
@@ -110,20 +103,16 @@ function App() {
               className="buy-text">купи.
               </span>
           </>)
-        break;
       case 'disabled':
         return (<span className='disabled-footer-text'>Печалька, {item.ingredient} закончился</span>)
-        break;
       case 'selected':
         return (item.footerDesc)
-        break;
     }
   }
 
   return (
     <div className="background">
       <div className="background-shadow">
-        {!isLoading &&
         <div className="page-content">
           <div className="page-title">
             Ты сегодня покормил кота?
@@ -171,7 +160,7 @@ function App() {
               )
             })}
           </div>
-        </div>}
+        </div>
       </div>
     </div>
   );

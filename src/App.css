@@ -37,6 +37,7 @@
 }
 
 .card {
+  cursor: default;
   width: 320px;
   height: 480px;
   font-family: "trebuchet ms";
