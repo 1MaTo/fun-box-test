@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fun-box-test/static/css/main.877435d8.chunk.css",
-    "main.js": "/fun-box-test/static/js/main.32ac9a6c.chunk.js",
-    "main.js.map": "/fun-box-test/static/js/main.32ac9a6c.chunk.js.map",
+    "main.css": "/fun-box-test/static/css/main.ba9744f1.chunk.css",
+    "main.js": "/fun-box-test/static/js/main.4ba69923.chunk.js",
+    "main.js.map": "/fun-box-test/static/js/main.4ba69923.chunk.js.map",
     "runtime-main.js": "/fun-box-test/static/js/runtime-main.c31ce070.js",
     "runtime-main.js.map": "/fun-box-test/static/js/runtime-main.c31ce070.js.map",
     "static/js/2.96616f4e.chunk.js": "/fun-box-test/static/js/2.96616f4e.chunk.js",
     "static/js/2.96616f4e.chunk.js.map": "/fun-box-test/static/js/2.96616f4e.chunk.js.map",
     "index.html": "/fun-box-test/index.html",
-    "precache-manifest.ba863dc0c86ff214b6366918d93787fe.js": "/fun-box-test/precache-manifest.ba863dc0c86ff214b6366918d93787fe.js",
+    "precache-manifest.fc88dbb4a9374b2be17fe08a53927691.js": "/fun-box-test/precache-manifest.fc88dbb4a9374b2be17fe08a53927691.js",
     "service-worker.js": "/fun-box-test/service-worker.js",
-    "static/css/main.877435d8.chunk.css.map": "/fun-box-test/static/css/main.877435d8.chunk.css.map",
+    "static/css/main.ba9744f1.chunk.css.map": "/fun-box-test/static/css/main.ba9744f1.chunk.css.map",
     "static/js/2.96616f4e.chunk.js.LICENSE.txt": "/fun-box-test/static/js/2.96616f4e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/fun-box-test/static/media/Exo2.0-Thin.44bde874.otf",
     "static/media/App.css": "/fun-box-test/static/media/selectedHover.9d8cc9b2.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.c31ce070.js",
     "static/js/2.96616f4e.chunk.js",
-    "static/css/main.877435d8.chunk.css",
-    "static/js/main.32ac9a6c.chunk.js"
+    "static/css/main.ba9744f1.chunk.css",
+    "static/js/main.4ba69923.chunk.js"
   ]
 }
