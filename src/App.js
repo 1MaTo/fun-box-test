@@ -52,7 +52,7 @@ function App() {
       .join(' '))
   }
 
-  const toggleSelect = (target, id) => {
+  const toggleSelect = (target, id, fromText) => {
     const element = target
     const item_id = id
     const selected_items = selected
@@ -61,7 +61,7 @@ function App() {
     if (index === -1) {
       setSelected([item_id, ...selected])
       element.classList.add('selected')
-      setJustHovered(true)
+      if (!fromText) setJustHovered(true)
     } else {
       selected_items.splice(selected_items.indexOf(item_id), 1)
       setSelected(selected_items)
@@ -99,7 +99,7 @@ function App() {
         return (
           <>
             Чего сидишь? Порадуй котэ <span
-              onClick={e => toggleSelect(document.getElementsByClassName(item.id)[0], item.id)}
+              onClick={e => toggleSelect(document.getElementsByClassName(item.id)[0], item.id, true)}
               className="buy-text">купи.
               </span>
           </>)
