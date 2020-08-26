@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
   ])
 
   const [selected, setSelected] = useState([])
-  const [justHovered, setJustHovered] = useState(false) 
+  const [justHovered, setJustHovered] = useState(false)
   const [phrases] = useState({
     unhover: 'Сказочное заморское яство',
     hover: 'Котэ не одобряет?',
